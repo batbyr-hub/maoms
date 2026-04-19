@@ -85,12 +85,8 @@ WSGI_APPLICATION = 'maoms.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'maoms_db',
-        'USER': 'postgres',
-        'PASSWORD': 'urilga@Dmin$',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

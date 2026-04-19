@@ -12,7 +12,9 @@ class Member(models.Model):
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
-        related_name='member_profile'
+        related_name='member_profile',
+        null=True,
+        blank=True
     )
 
     # Basic info
